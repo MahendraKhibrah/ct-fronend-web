@@ -1,4 +1,4 @@
- name: Deploy to Self-Hosted Runner
+name: Deploy to Self-Hosted Runner
 
 on:
   push:
@@ -19,4 +19,4 @@ jobs:
         run: docker pull 10.0.0.2:81/prod/ct-frontend:latest
 
       - name: Run Docker Compose
-        run: docker compose  up -d
+        run: docker compose up -d
