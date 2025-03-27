@@ -4,7 +4,7 @@ services:
   nuxt-app:
     build:
       context: .
-    image: 10.0.0.2:3003/prod/ct-frontend:latest
+    image: 10.0.0.2:81/prod/ct-frontend:latest
     container_name: ct-frontend-prod
     ports:
       - '3003:3003'
