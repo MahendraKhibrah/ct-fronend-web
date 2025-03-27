@@ -7,7 +7,7 @@ FROM node:${NODE_VERSION}-alpine as base
 RUN apk add --no-cache bash build-base
 
 # Mendefinisikan variabel PORT dan ENV untuk container
-ARG PORT=3000
+ARG PORT=3003
 ENV NODE_ENV=production
 
 WORKDIR /src

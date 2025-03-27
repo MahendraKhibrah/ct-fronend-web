@@ -4,9 +4,10 @@ services:
   nuxt-app:
     build:
       context: .
-      dockerfile: Dockerfile
+    image: 10.0.0.2:3003/prod/ct-frontend:latest
+    container_name: ct-frontend-prod
     ports:
-      - '3000:3000'
+      - '3003:3003'
     environment:
       - NODE_ENV=production
       - API_BASE_URL=${API_BASE_URL}
